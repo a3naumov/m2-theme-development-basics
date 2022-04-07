@@ -4,5 +4,7 @@
         <referenceBlock name="wish-list-link" remove="true" />
         <referenceBlock name="my-account-link" remove="true" />
         <referenceBlock name="catalog.compare.link" remove="true" />
+        <referenceBlock name="advanced-search-link" remove="true" />
+        <referenceBlock name="skip_to_content" remove="true" />
     </body>
 </page>

@@ -1,6 +1,85 @@
 //Fonts
 @font-family-name__base: 'Roboto';
-
+// Header
 .greet.welcome {
     float: left;
 }
+.page-header .panel.wrapper,
+.header.panel > .header.links > li,
+.page-header .switcher,
+.block-search input {
+    border-color: #eee;
+}
+.block-search {
+    padding: 9px 0 9px 15px;
+    width: 410px;
+    #search:focus {
+        box-shadow: 0 0 3px 1px #f2703e;
+    }
+}
+.action.search {
+    height: 50%;
+    &::before {
+        color: #000;
+    }
+}
+.header.links a {
+    color: #222;
+    &:hover {
+        color: #f2703e;
+        text-decoration: none;
+    }
+}
+.minicart-wrapper .action.showcart {
+    &::before {
+        line-height: 50px;
+    }
+    &:hover::before {
+        color: #f2703e;
+    }
+}
+// Navigation
+@media (min-width: 768px), print {
+    .section-items.nav-sections-items {
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        .nav-sections-item-content > .navigation {
+            display: flex;
+            justify-content: center;
+            .level0 .submenu {
+                border-top: 3px solid #f2703e;
+            }
+            li.level0 {
+                padding: 0;
+                > .level-top {
+                    padding: 5px 20px;
+                    display: inline;
+                    text-transform: uppercase;
+                    > .ui-menu-icon {
+                        display: none;
+                    }
+                }
+            }
+
+        }
+    }
+}
+@navigation__background: #fff;
+@navigation-desktop-level0-item__color: #222;
+@navigation-desktop-level0-item__hover__color: #fff;
+@navigation-desktop-level0-item__hover__background: #f2703e;
+@submenu-desktop__background: #f2f2f2;
+@submenu-desktop-item__hover__color: #f2703e;
+@submenu-desktop-item__active__color: #f2703e;
+@navigation-desktop-level0-item__active__color: #fff;
+@navigation-desktop-level0-item__active__background: #f2703e;
+@navigation-desktop-level0-item__active__border-style: none;
+// Mobile navigation
+.nav-sections-item-switch {
+    color: #f2703e;
+}
+@navigation-level0-item__color: #222;
+@submenu__background: #f2f2f2;
+@navigation-level0-item__hover__color: #f2703e;
+@submenu-item__active__color: #f2703e;
+
