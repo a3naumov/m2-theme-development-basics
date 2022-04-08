@@ -6,5 +6,16 @@
         <referenceBlock name="catalog.compare.link" remove="true" />
         <referenceBlock name="advanced-search-link" remove="true" />
         <referenceBlock name="skip_to_content" remove="true" />
+        <referenceBlock name="report.bugs" remove="true" />
+        <referenceBlock name="newsletter" remove="true" />
+        <referenceBlock name="footer_links">
+            <block class="Magento\Framework\View\Element\Text" name="footer_links_title" before="-">
+                <arguments>
+                    <argument translate="true" name="text" xsi:type="string">
+                        <![CDATA[<div class="title"><strong>Information</strong></div>]]>
+                    </argument>
+                </arguments>
+            </block>
+        </referenceBlock>
     </body>
 </page>
