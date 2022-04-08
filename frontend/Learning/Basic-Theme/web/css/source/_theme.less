@@ -174,11 +174,12 @@ body {
 .swatch-option.text:hover,
 .swatch-option.text:focus,
 .swatch-option.color:focus,
-.swatch-option.color:focus {
-    border: 1px solid @lbt_main_color;
-    color: #222;
-    outline: 1px solid @lbt_main_color;
-    box-shadow: 0 0 3px 1px @lbt_main_color;
+.swatch-option.color:focus,
+.swatch-option.selected {
+    border: 1px solid @lbt_main_color !important;
+    color: #222 !important;
+    outline: 1px solid @lbt_main_color !important;
+    box-shadow: 0 0 3px 1px @lbt_main_color !important;
 }
 // Messages
 .messages {
